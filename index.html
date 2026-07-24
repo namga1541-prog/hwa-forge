@@ -260,8 +260,13 @@ footer a{color:var(--gold-deep)}
 <!-- ══════════ 캐릭터 분석 ══════════ -->
 <section id="char">
   <div class="card">
-    <h2>캐릭터 데이터 가져오기</h2>
-    <p class="note">이 페이지는 보안 정책상 공식 사이트를 직접 호출할 수 없어, <b>공식 캐릭터 정보실의 데이터 주소를 새 탭으로 열고 → 화면의 글자 전체를 복사(Ctrl+A, Ctrl+C) → 아래 칸에 붙여넣는</b> 방식입니다. 로그인 필요 없고, 붙여넣은 데이터는 이 브라우저 안에서만 처리됩니다.</p>
+    <h2>레기온 캐릭터 — 자동 조회</h2>
+    <div id="chSavedBar" class="note" style="margin-top:0"></div>
+    <p class="note">명단에 등록된 캐릭터는 저장소의 자동 갱신 데이터가 그대로 뜹니다 — 입력할 것이 없습니다. 이름을 누르면 아래에 분석이 표시됩니다. 데이터가 오래됐으면 관리자에게 갱신을 요청해 주십시오.</p>
+  </div>
+  <div class="card">
+    <h2>명단 외 캐릭터 수동 조회</h2>
+    <p class="note">위 명단에 <b>없는</b> 캐릭터를 볼 때만 쓰는 카드입니다. 웹페이지는 브라우저 규칙(CORS)상 공식 API를 직접 호출할 수 없어, <b>데이터 주소를 새 탭으로 열고 → 내용 전체 복사 → 붙여넣기</b> 방식을 씁니다. 붙여넣은 데이터는 이 브라우저 안에서만 처리됩니다.</p>
     <div class="ctrl">
       <div class="f"><label>캐릭터 이름</label><input type="text" id="chName" placeholder="예: 바람바"></div>
       <div class="f"><label>종족</label><select id="chRace"><option value="1">천족</option><option value="2">마족</option></select></div>
@@ -1209,9 +1214,10 @@ const SAVED_CHARS=[{
 let savedBar=null;
 function savedRenderBar(extra){
   if(!SAVED_CHARS.length)return;
+  if(!savedBar)savedBar=$('chSavedBar');
   if(!savedBar){savedBar=document.createElement('p');savedBar.className='note';
     $('chMatches').parentNode.insertBefore(savedBar,$('chMatches'));}
-  savedBar.innerHTML='저장된 캐릭터: '+SAVED_CHARS.map((c,i)=>`<button class="pick" data-sv="${i}">${c.label}</button>`).join('')+
+  savedBar.innerHTML=SAVED_CHARS.map((c,i)=>`<button class="pick" data-sv="${i}">${c.label}</button>`).join('')+
     (extra?' <span class="tag-off">'+extra+'</span>':' <span class="tag-est">조회 시점 데이터입니다.</span>');
   savedBar.querySelectorAll('[data-sv]').forEach(b=>b.onclick=()=>{
     const c=SAVED_CHARS[+b.dataset.sv];chState.info=c.info;chState.equip=c.equip;chRender();});
