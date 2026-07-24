@@ -18,9 +18,13 @@ jobs:
           node-version: 20
       - name: 캐릭터 데이터 갱신
         run: node scripts/fetch-characters.mjs
+      - name: 아이템 사전 갱신
+        run: node scripts/fetch-items.mjs
+        continue-on-error: true
       - name: 변경분 커밋
         run: |
           git config user.name "hwa-forge-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/characters.json
-          git diff --cached --quiet || (git commit -m "chore: 캐릭터 데이터 자동 갱신" && git push)
+          if [ -f data/items.json ]; then git add data/items.json; fi
+          git diff --cached --quiet || (git commit -m "chore: 캐릭터·아이템 데이터 자동 갱신" && git push)

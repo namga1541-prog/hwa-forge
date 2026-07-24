@@ -312,20 +312,13 @@ footer a{color:var(--gold-deep)}
 <!-- ══════════ 세트 비교 (PVP/PVE) ══════════ -->
 <section id="vs">
   <div class="card">
-    <h2>아이템 사전에서 가져오기</h2>
-    <p class="note">공식 아이템 사전의 검색 주소를 새 탭으로 열어, 나온 글자 전체(JSON)를 복사해 붙여넣으십시오. 여러 번 검색해 이어붙여도 됩니다. 옵션 수치는 <b>+0강 기본값</b>이라 두 세트를 같은 강화 수준으로 비교하는 용도입니다.</p>
+    <h2>아이템 검색</h2>
+    <p id="vsCatalogStatus" class="note">아이템 사전을 불러오는 중입니다…</p>
     <div class="ctrl">
-      <div class="f"><label>아이템 이름</label><input type="text" id="vsName" placeholder="예: 군단장의 대검"></div>
-      <div class="f"><label>&nbsp;</label><button class="btn" id="vsMakeUrl">① 검색 주소 만들기</button></div>
+      <div class="f"><label>이름으로 검색</label><input type="text" id="vsSearch" placeholder="예: 군단장의 대검" disabled></div>
     </div>
-    <div id="vsUrls"></div>
-    <div class="f" style="margin-top:12px"><label>② 검색 결과 붙여넣기</label>
-      <textarea id="vsPaste" rows="4" placeholder='{"contents":[...]}'></textarea></div>
-    <div class="btnrow" style="justify-content:flex-start;margin-top:10px">
-      <button class="btn gold" id="vsParse">③ 해석하기</button>
-      <button class="btn" id="vsClearPaste">비우기</button>
-    </div>
-    <div id="vsFound" class="note"></div>
+    <div id="vsResults" style="margin-top:10px;max-height:340px;overflow-y:auto"></div>
+    <p class="note">옵션 수치는 <b>+0강 기본값</b>이라 두 세트를 같은 강화 수준으로 비교하는 용도입니다. 결과가 많으면 최대 40개까지만 보여드립니다 — 검색어를 구체적으로 넣어 주십시오.</p>
   </div>
   <div class="card">
     <h2>세트 구성</h2>
@@ -869,8 +862,8 @@ function chRender(){
 }
 
 /* ───────── 세트 비교 (PVP/PVE) ───────── */
-const DICT_API='https://api-goats.plaync.com/aion2/v2.0/dict/search/item';
 const vsState={found:[],A:[],B:[],mode:'PVP'};
+let ITEM_CATALOG=[];
 // "공격력 463 ~ 627" / "PVP 피해 증폭 10%" → {label, value(범위는 평균), pct}
 function parseOpt(o){
   const m=String(o).match(/^(.*?)\s*\+?\s*([\d,]+(?:\.\d+)?)\s*(?:~\s*([\d,]+(?:\.\d+)?))?\s*(%)?\s*$/);
@@ -879,28 +872,32 @@ function parseOpt(o){
   return{label:m[1].trim(),value:v2!=null?(v1+v2)/2:v1,pct:!!m[4]};
 }
 const vsLive=l=>vsState.mode==='PVP'?!/PVE/i.test(l):!/PVP/i.test(l);
-$('vsMakeUrl').onclick=()=>{
-  const n=$('vsName').value.trim();
-  if(!n){$('vsUrls').innerHTML='<p class="note">아이템 이름을 먼저 입력해 주십시오.</p>';return;}
-  const u=`${DICT_API}?query=${encodeURIComponent(n)}&size=15&locale=ko-KR`;
-  $('vsUrls').innerHTML=`<div class="urlbox">검색 주소 (새 탭으로 열어 내용 복사):<br><a href="${u}" target="_blank" rel="noopener">${u}</a></div>`;
-};
-$('vsClearPaste').onclick=()=>{$('vsPaste').value='';$('vsFound').textContent='';};
+function vsCatalogInit(){
+  fetch('data/items.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{
+    if(!d||!d.items||!d.items.length){
+      $('vsCatalogStatus').textContent='아이템 사전을 불러오지 못했습니다 — 배포된 사이트(github.io)에서만 동작합니다.';
+      return;
+    }
+    ITEM_CATALOG=d.items;
+    $('vsSearch').disabled=false;
+    $('vsCatalogStatus').innerHTML='<span class="tag-off">'+fmt(ITEM_CATALOG.length)+'종 로드됨</span> · '+String(d.generatedAt||'').slice(0,10)+' 기준 공식 아이템 사전';
+    vsSearchRender();
+  }).catch(()=>{$('vsCatalogStatus').textContent='아이템 사전을 불러오지 못했습니다.';});
+}
+function vsSearchRender(){
+  const q=$('vsSearch').value.trim();
+  if(!q){$('vsResults').innerHTML='';return;}
+  const list=ITEM_CATALOG.filter(it=>it.name.includes(q)).slice(0,40);
+  $('vsResults').innerHTML=!list.length?'<p class="note">일치하는 아이템이 없습니다.</p>':
+    list.map(it=>{const idx=ITEM_CATALOG.indexOf(it);
+      return `<div style="margin-top:6px;padding-bottom:6px;border-bottom:1px solid var(--line)"><b>${it.name}</b> <span class="chip">${GRADE_KO[it.grade]||it.grade}</span> <span class="chip">${it.categoryName||''}</span>
+      <button class="pick" data-i="${idx}" data-s="A">A에 담기</button><button class="pick" data-i="${idx}" data-s="B">B에 담기</button>
+      <div class="note" style="margin:2px 0 0">${(it.options||[]).join(' · ')}</div></div>`;}).join('');
+  $('vsResults').querySelectorAll('.pick').forEach(b=>b.onclick=()=>{
+    vsState[b.dataset.s].push(ITEM_CATALOG[+b.dataset.i]);vsRenderSets();});
+}
+$('vsSearch').oninput=vsSearchRender;
 $('vsClearSets').onclick=()=>{vsState.A=[];vsState.B=[];vsRenderSets();};
-$('vsParse').onclick=()=>{
-  const objs=extractJsons($('vsPaste').value);
-  const items=[];const seen=new Set();
-  for(const o of objs)if(o.contents)for(const it of o.contents)
-    if(it.name&&it.options&&!seen.has(it.id)){seen.add(it.id);items.push(it);}
-  vsState.found=items;
-  if(!items.length){$('vsFound').innerHTML='아이템 데이터가 없습니다. 검색 결과 페이지 내용 전체를 복사했는지 확인해 주십시오.';return;}
-  $('vsFound').innerHTML='인식된 아이템 '+items.length+'개 — A/B 버튼으로 세트에 담으십시오:<br>'+
-    items.map((it,i)=>`<div style="margin-top:6px"><b>${it.name}</b> <span class="chip">${GRADE_KO[it.grade]||it.grade}</span> <span class="chip">${it.categoryName||''}</span>
-      <button class="pick" data-i="${i}" data-s="A">A에 담기</button><button class="pick" data-i="${i}" data-s="B">B에 담기</button>
-      <div class="note" style="margin:2px 0 0">${(it.options||[]).join(' · ')}</div></div>`).join('');
-  $('vsFound').querySelectorAll('.pick').forEach(b=>b.onclick=()=>{
-    vsState[b.dataset.s].push(vsState.found[+b.dataset.i]);vsRenderSets();});
-};
 function vsRenderSets(){
   for(const s of['A','B'])$('vs'+s).innerHTML=vsState[s].length?vsState[s].map((it,i)=>
     `<div style="margin:3px 0;font-size:13px">${it.name} <span class="chip">${GRADE_KO[it.grade]||it.grade}</span>
@@ -1155,7 +1152,7 @@ document.addEventListener('input',persistCapture);
 document.addEventListener('change',persistCapture);
 document.addEventListener('click',e=>{
   const t=e.target;if(!t||!t.closest)return;
-  if(t.closest('#vsFound')||t.closest('#vsA')||t.closest('#vsB')||t.id==='vsClearSets'){
+  if(t.closest('#vsResults')||t.closest('#vsA')||t.closest('#vsB')||t.id==='vsClearSets'){
     store.vs={A:vsState.A,B:vsState.B};saveStore();}
   if(t.closest('#abOthers')||t.closest('#abGoals')||t.id==='abAddOther'||t.id==='abAddGoal'){
     store.ab={others:AB.others,goals:AB.goals};saveStore();}
@@ -1392,5 +1389,5 @@ function abCompare(){
  'hbName','hbMin','hbKill','hbAp','hbKina','hbDrop'].forEach(id=>$(id).oninput=abCalc);
 
 /* ───────── 시작 ───────── */
-eInit();bInit();cApplyPreset();simSync();dpsRender();abRenderOthers();abRenderGoals();abCalc();savedInit();odInit();scheduleRender();persistInit();
+eInit();bInit();cApplyPreset();simSync();dpsRender();abRenderOthers();abRenderGoals();abCalc();savedInit();odInit();scheduleRender();vsCatalogInit();persistInit();
 </script>
