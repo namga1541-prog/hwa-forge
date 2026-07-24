@@ -126,6 +126,12 @@ footer a{color:var(--gold-deep)}
 <!-- ══════════ 레기온 현황판 ══════════ -->
 <section id="board" class="on">
   <div class="card">
+    <h2>이번 주 콘텐츠 일정</h2>
+    <div id="scheduleToday"></div>
+    <div class="tblwrap"><table id="scheduleTable"></table></div>
+    <p class="note">확실히 확인된 것만 표기했습니다 — <b>월·화·목·금요일은 요일 고정 콘텐츠가 확인되지 않았습니다</b>(그 요일의 주간 숙제는 요일 무관, 아무 때나 처리하면 됩니다). 커뮤니티 일부에 "점령전이 화/목/토"라는 상충 정보가 있었으나 근거가 약해 반영하지 않았습니다. 2026-07-24 기준 확인.</p>
+  </div>
+  <div class="card">
     <h2>레기온 현황판 — 화</h2>
     <p class="note">자동 조회 명단 전원을 전투력 순으로 한눈에 봅니다. "다음 한 칸"은 캐릭터 분석 탭과 같은 비용 효율 기준 1순위이며, 룬처럼 실패 시 파괴되는 위험 옵션은 경고가 함께 표시됩니다.</p>
     <div class="tblwrap"><table id="boardTable"></table></div>
@@ -1273,6 +1279,27 @@ function boardRender(){
       '<td style="text-align:left;white-space:normal">'+(d.top?d.top.slot+' 「'+d.top.name+'」 '+d.top.cand.act+' <span class="tag-est">('+d.top.cand.rate+')</span>':'졸업급')+'</td></tr>').join('');
 }
 
+/* ───────── 이번 주 콘텐츠 일정 ───────── */
+function scheduleRender(){
+  const tbl=$('scheduleTable');if(!tbl)return;
+  const DOW=['일','월','화','수','목','금','토'];
+  const CONTENT=[
+    '필드보스 나흐마 등장 (평시 일요일 단독, 이벤트 기간엔 토+일 양일)',
+    '—','—',
+    '주간 리셋 05:00 · 아티팩트 점령전 22:00 (직후 22:30 어비스 보스)',
+    '—','—',
+    '아티팩트 점령전 22:00 (직후 22:30 어비스 보스)'
+  ];
+  const today=new Date().getDay();
+  tbl.innerHTML='<tr><th>요일</th><th style="text-align:left">콘텐츠</th></tr>'+
+    DOW.map((d,i)=>'<tr'+(i===today?' class="total"':'')+'><td>'+d+'요일'+(i===today?' · 오늘':'')+'</td>'+
+      '<td style="text-align:left;white-space:normal">'+CONTENT[i]+'</td></tr>').join('');
+  const todayC=CONTENT[today];
+  $('scheduleToday').innerHTML=todayC==='—'
+    ?'<div class="reco1"><div class="t">오늘('+DOW[today]+') — 요일 고정 콘텐츠 없음</div><div class="note" style="margin-top:4px">사명·정복·슈고 페스타 같은 주간 숙제를 처리하기 좋은 날입니다.</div></div>'
+    :'<div class="reco1"><div class="t">오늘('+DOW[today]+') — '+todayC+'</div></div>';
+}
+
 /* ───────── 어비스 플래너 ───────── */
 // 기타 수급처 기본값: 커뮤니티 정리(인벤 6493/35, 뉴스 311736) — 출처·시점별 편차 큼, 수정 전제
 const AB={
@@ -1363,5 +1390,5 @@ function abCompare(){
  'hbName','hbMin','hbKill','hbAp','hbKina','hbDrop'].forEach(id=>$(id).oninput=abCalc);
 
 /* ───────── 시작 ───────── */
-eInit();bInit();cApplyPreset();simSync();dpsRender();abRenderOthers();abRenderGoals();abCalc();savedInit();odInit();persistInit();
+eInit();bInit();cApplyPreset();simSync();dpsRender();abRenderOthers();abRenderGoals();abCalc();savedInit();odInit();scheduleRender();persistInit();
 </script>
