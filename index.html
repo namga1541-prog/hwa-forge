@@ -110,11 +110,11 @@ footer a{color:var(--gold-deep)}
 </header>
 
 <nav>
-  <button class="on" data-t="enchant">강화 계산기</button>
+  <button class="on" data-t="board">현황판</button>
+  <button data-t="enchant">강화 계산기</button>
   <button data-t="break">돌파 계산기</button>
   <button data-t="craft">제작 계산기</button>
   <button data-t="sim">시뮬레이터</button>
-  <button data-t="board">현황판</button>
   <button data-t="char">캐릭터 분석</button>
   <button data-t="vs">세트 비교</button>
   <button data-t="dps">딜 효율</button>
@@ -123,7 +123,16 @@ footer a{color:var(--gold-deep)}
 </nav>
 
 <!-- ══════════ 강화 계산기 ══════════ -->
-<section id="enchant" class="on">
+<!-- ══════════ 레기온 현황판 ══════════ -->
+<section id="board" class="on">
+  <div class="card">
+    <h2>레기온 현황판 — 화</h2>
+    <p class="note">자동 조회 명단 전원을 전투력 순으로 한눈에 봅니다. "다음 한 칸"은 캐릭터 분석 탭과 같은 비용 효율 기준 1순위이며, 룬처럼 실패 시 파괴되는 위험 옵션은 경고가 함께 표시됩니다.</p>
+    <div class="tblwrap"><table id="boardTable"></table></div>
+  </div>
+</section>
+
+<section id="enchant">
   <div class="card">
     <h2>장비 설정</h2>
     <div class="ctrl">
@@ -255,15 +264,6 @@ footer a{color:var(--gold-deep)}
       <div class="stat"><div class="k">성공자 평균 소모</div><div class="v" id="bpAvg">—</div></div>
       <div class="stat"><div class="k">실패자 평균 도달</div><div class="v" id="bpStop">—</div></div>
     </div>
-  </div>
-</section>
-
-<!-- ══════════ 레기온 현황판 ══════════ -->
-<section id="board">
-  <div class="card">
-    <h2>레기온 현황판 — 화</h2>
-    <p class="note">자동 조회 명단 전원을 전투력 순으로 한눈에 봅니다. "다음 한 칸"은 캐릭터 분석 탭과 같은 비용 효율 기준 1순위이며, 룬처럼 실패 시 파괴되는 위험 옵션은 경고가 함께 표시됩니다.</p>
-    <div class="tblwrap"><table id="boardTable"></table></div>
   </div>
 </section>
 
