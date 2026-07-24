@@ -1,0 +1,1745 @@
+{
+ "generatedAt": "2026-07-24T12:21:38.015Z",
+ "chars": [
+  {
+   "label": "흑도성 · 이슈타르 (2026-07-24 조회)",
+   "info": {
+    "profile": {
+     "characterName": "흑도성",
+     "characterLevel": 50,
+     "className": "마도성",
+     "combatPower": 684374,
+     "raceName": "천족",
+     "serverName": "이슈타르"
+    },
+    "stat": {
+     "statList": [
+      {
+       "name": "위력",
+       "value": 277
+      },
+      {
+       "name": "민첩",
+       "value": 68
+      },
+      {
+       "name": "지식",
+       "value": 299
+      },
+      {
+       "name": "체력",
+       "value": 47
+      },
+      {
+       "name": "정확",
+       "value": 270
+      },
+      {
+       "name": "의지",
+       "value": 119
+      },
+      {
+       "name": "정의[네자칸]",
+       "value": 60
+      },
+      {
+       "name": "자유[바이젤]",
+       "value": 131
+      },
+      {
+       "name": "환상[카이시넬]",
+       "value": 141
+      },
+      {
+       "name": "생명[유스티엘]",
+       "value": 99
+      },
+      {
+       "name": "시간[시엘]",
+       "value": 165
+      },
+      {
+       "name": "파괴[지켈]",
+       "value": 140
+      },
+      {
+       "name": "죽음[트리니엘]",
+       "value": 71
+      },
+      {
+       "name": "지혜[루미엘]",
+       "value": 157
+      },
+      {
+       "name": "운명[마르쿠탄]",
+       "value": 63
+      },
+      {
+       "name": "공간[이스라펠]",
+       "value": 131
+      },
+      {
+       "name": "아이템레벨",
+       "value": 5348
+      }
+     ]
+    },
+    "title": {
+     "ownedCount": 331,
+     "totalCount": 422
+    },
+    "daevanion": {
+     "boardList": [
+      {
+       "name": "네자칸",
+       "openPercent": 82
+      },
+      {
+       "name": "지켈",
+       "openPercent": 78
+      },
+      {
+       "name": "바이젤",
+       "openPercent": 80
+      },
+      {
+       "name": "트리니엘",
+       "openPercent": 75
+      },
+      {
+       "name": "아리엘",
+       "openPercent": 100
+      },
+      {
+       "name": "아스펠",
+       "openPercent": 47
+      },
+      {
+       "name": "마르쿠탄",
+       "openPercent": 100
+      },
+      {
+       "name": "유스티엘",
+       "openPercent": 100
+      }
+     ]
+    }
+   },
+   "equip": {
+    "equipment": {
+     "equipmentList": [
+      {
+       "slotPosName": "MainHand",
+       "name": "응룡왕의 마법서",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "SubHand",
+       "name": "응룡왕의 가더",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Torso",
+       "name": "가디언 천부장의 흉갑",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Pants",
+       "name": "용암 심장의 각반",
+       "grade": "Epic",
+       "enchantLevel": 16,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Helmet",
+       "name": "가디언 천부장의 투구",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Shoulder",
+       "name": "가디언 백부장의 견갑",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 3
+      },
+      {
+       "slotPosName": "Gloves",
+       "name": "용암 심장의 장갑",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 1
+      },
+      {
+       "slotPosName": "Boots",
+       "name": "가디언 천부장의 장화",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Cape",
+       "name": "가디언 천부장의 망토",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Belt",
+       "name": "고결의 허리띠",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Necklace",
+       "name": "가디언 백부장의 목걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring1",
+       "name": "가디언 백부장의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring2",
+       "name": "가디언 천부장의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring2",
+       "name": "가디언 백부장의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring1",
+       "name": "가디언 백부장의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet1",
+       "name": "침식된 잔영의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet2",
+       "name": "침식된 잔영의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Brooch1",
+       "name": "칼드릭스의 브로치",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch2",
+       "name": "칼드릭스의 브로치",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Rune1",
+       "name": "전념의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune2",
+       "name": "전념의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Amulet",
+       "name": "격전의 아뮬렛",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pendant",
+       "name": "드라코닉 펜던트",
+       "grade": "Unique",
+       "enchantLevel": 7,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana1",
+       "name": "수호의 성배",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana2",
+       "name": "수호의 양피지",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana3",
+       "name": "수호의 나침반",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana4",
+       "name": "불굴의 종",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana5",
+       "name": "수호의 거울",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana6",
+       "name": "불굴의 천칭",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana7",
+       "name": "불굴의 열쇠",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana8",
+       "name": "불굴의 모래시계",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "label": "쓱 · 이슈타르 (2026-07-24 조회)",
+   "info": {
+    "profile": {
+     "characterName": "쓱",
+     "characterLevel": 50,
+     "className": "살성",
+     "combatPower": 790448,
+     "raceName": "천족",
+     "serverName": "이슈타르"
+    },
+    "stat": {
+     "statList": [
+      {
+       "name": "위력",
+       "value": 298
+      },
+      {
+       "name": "민첩",
+       "value": 77
+      },
+      {
+       "name": "지식",
+       "value": 260
+      },
+      {
+       "name": "체력",
+       "value": 131
+      },
+      {
+       "name": "정확",
+       "value": 299
+      },
+      {
+       "name": "의지",
+       "value": 94
+      },
+      {
+       "name": "정의[네자칸]",
+       "value": 60
+      },
+      {
+       "name": "자유[바이젤]",
+       "value": 141
+      },
+      {
+       "name": "환상[카이시넬]",
+       "value": 118
+      },
+      {
+       "name": "생명[유스티엘]",
+       "value": 104
+      },
+      {
+       "name": "시간[시엘]",
+       "value": 163
+      },
+      {
+       "name": "파괴[지켈]",
+       "value": 138
+      },
+      {
+       "name": "죽음[트리니엘]",
+       "value": 91
+      },
+      {
+       "name": "지혜[루미엘]",
+       "value": 164
+      },
+      {
+       "name": "운명[마르쿠탄]",
+       "value": 55
+      },
+      {
+       "name": "공간[이스라펠]",
+       "value": 121
+      },
+      {
+       "name": "아이템레벨",
+       "value": 5691
+      }
+     ]
+    },
+    "title": {
+     "ownedCount": 368,
+     "totalCount": 422
+    },
+    "daevanion": {
+     "boardList": [
+      {
+       "name": "네자칸",
+       "openPercent": 78
+      },
+      {
+       "name": "지켈",
+       "openPercent": 78
+      },
+      {
+       "name": "바이젤",
+       "openPercent": 80
+      },
+      {
+       "name": "트리니엘",
+       "openPercent": 79
+      },
+      {
+       "name": "아리엘",
+       "openPercent": 100
+      },
+      {
+       "name": "아스펠",
+       "openPercent": 46
+      },
+      {
+       "name": "마르쿠탄",
+       "openPercent": 100
+      },
+      {
+       "name": "유스티엘",
+       "openPercent": 100
+      }
+     ]
+    }
+   },
+   "equip": {
+    "equipment": {
+     "equipmentList": [
+      {
+       "slotPosName": "MainHand",
+       "name": "빛나는 창룡왕의 단검",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "SubHand",
+       "name": "응룡왕의 가더",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Torso",
+       "name": "가디언 군단장의 흉갑",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Pants",
+       "name": "가디언 군단장의 각반",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Helmet",
+       "name": "침식된 잔영의 투구",
+       "grade": "Epic",
+       "enchantLevel": 13,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Shoulder",
+       "name": "침식된 잔영의 견갑",
+       "grade": "Epic",
+       "enchantLevel": 13,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Gloves",
+       "name": "침식된 잔영의 장갑",
+       "grade": "Epic",
+       "enchantLevel": 13,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Boots",
+       "name": "침식된 잔영의 장화",
+       "grade": "Epic",
+       "enchantLevel": 13,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Cape",
+       "name": "용암 심장의 망토",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 2
+      },
+      {
+       "slotPosName": "Belt",
+       "name": "고결의 허리띠",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Necklace",
+       "name": "빛나는 천룡왕의 목걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring1",
+       "name": "빛나는 천룡왕의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring2",
+       "name": "빛나는 천룡왕의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring2",
+       "name": "빛나는 천룡왕의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring1",
+       "name": "빛나는 천룡왕의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet1",
+       "name": "침식된 잔영의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Bracelet2",
+       "name": "침식된 잔영의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch2",
+       "name": "칼드릭스의 브로치",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch1",
+       "name": "칼드릭스의 브로치",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Rune1",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune2",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Amulet",
+       "name": "계시의 아뮬렛",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pendant",
+       "name": "드라코닉 펜던트",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana1",
+       "name": "수호의 성배",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana2",
+       "name": "수호의 양피지",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana3",
+       "name": "불굴의 나침반",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana4",
+       "name": "불굴의 종",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana5",
+       "name": "수호의 거울",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana6",
+       "name": "불굴의 천칭",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana7",
+       "name": "불굴의 열쇠",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana8",
+       "name": "수호의 모래시계",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "label": "기러기 · 이슈타르 (2026-07-24 조회)",
+   "info": {
+    "profile": {
+     "characterName": "기러기",
+     "characterLevel": 50,
+     "className": "궁성",
+     "combatPower": 810368,
+     "raceName": "천족",
+     "serverName": "이슈타르"
+    },
+    "stat": {
+     "statList": [
+      {
+       "name": "위력",
+       "value": 246
+      },
+      {
+       "name": "민첩",
+       "value": 94
+      },
+      {
+       "name": "지식",
+       "value": 206
+      },
+      {
+       "name": "체력",
+       "value": 46
+      },
+      {
+       "name": "정확",
+       "value": 254
+      },
+      {
+       "name": "의지",
+       "value": 94
+      },
+      {
+       "name": "정의[네자칸]",
+       "value": 30
+      },
+      {
+       "name": "자유[바이젤]",
+       "value": 99
+      },
+      {
+       "name": "환상[카이시넬]",
+       "value": 63
+      },
+      {
+       "name": "생명[유스티엘]",
+       "value": 103
+      },
+      {
+       "name": "시간[시엘]",
+       "value": 164
+      },
+      {
+       "name": "파괴[지켈]",
+       "value": 170
+      },
+      {
+       "name": "죽음[트리니엘]",
+       "value": 139
+      },
+      {
+       "name": "지혜[루미엘]",
+       "value": 189
+      },
+      {
+       "name": "운명[마르쿠탄]",
+       "value": 63
+      },
+      {
+       "name": "공간[이스라펠]",
+       "value": 119
+      },
+      {
+       "name": "아이템레벨",
+       "value": 5819
+      }
+     ]
+    },
+    "title": {
+     "ownedCount": 333,
+     "totalCount": 422
+    },
+    "daevanion": {
+     "boardList": [
+      {
+       "name": "네자칸",
+       "openPercent": 84
+      },
+      {
+       "name": "지켈",
+       "openPercent": 82
+      },
+      {
+       "name": "바이젤",
+       "openPercent": 80
+      },
+      {
+       "name": "트리니엘",
+       "openPercent": 82
+      },
+      {
+       "name": "아리엘",
+       "openPercent": 100
+      },
+      {
+       "name": "아스펠",
+       "openPercent": 28
+      },
+      {
+       "name": "마르쿠탄",
+       "openPercent": 100
+      },
+      {
+       "name": "유스티엘",
+       "openPercent": 100
+      }
+     ]
+    }
+   },
+   "equip": {
+    "equipment": {
+     "equipmentList": [
+      {
+       "slotPosName": "MainHand",
+       "name": "빛나는 응룡왕의 활",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "SubHand",
+       "name": "빛나는 응룡왕의 가더",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Torso",
+       "name": "빛나는 창룡왕의 흉갑",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Pants",
+       "name": "침식된 잔영의 각반",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Helmet",
+       "name": "침식된 잔영의 투구",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Shoulder",
+       "name": "용암 심장의 견갑",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Gloves",
+       "name": "용암 심장의 장갑",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Boots",
+       "name": "침식된 잔영의 장화",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Cape",
+       "name": "침식된 잔영의 망토",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Belt",
+       "name": "고결의 허리띠",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Necklace",
+       "name": "응룡왕의 목걸이",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring2",
+       "name": "응룡왕의 귀걸이",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring1",
+       "name": "빛나는 응룡왕의 귀걸이",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring1",
+       "name": "응룡왕의 반지",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring2",
+       "name": "응룡왕의 반지",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet2",
+       "name": "침식된 잔영의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet1",
+       "name": "침식된 잔영의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch1",
+       "name": "칼드릭스의 브로치",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch2",
+       "name": "순례자의 브로치",
+       "grade": "Legend",
+       "enchantLevel": 15,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune2",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune1",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Amulet",
+       "name": "계시의 아뮬렛",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pendant",
+       "name": "드라코닉 펜던트",
+       "grade": "Unique",
+       "enchantLevel": 20,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana1",
+       "name": "수호의 성배",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana2",
+       "name": "수호의 양피지",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana3",
+       "name": "징벌의 나침반",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana4",
+       "name": "징벌의 종",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana5",
+       "name": "징벌의 거울",
+       "grade": "Unique",
+       "enchantLevel": 4,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana6",
+       "name": "불굴의 천칭",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana7",
+       "name": "수호의 열쇠",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana8",
+       "name": "수호의 모래시계",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "label": "큐찡 · 이슈타르 (2026-07-24 조회)",
+   "info": {
+    "profile": {
+     "characterName": "큐찡",
+     "characterLevel": 50,
+     "className": "치유성",
+     "combatPower": 580974,
+     "raceName": "천족",
+     "serverName": "이슈타르"
+    },
+    "stat": {
+     "statList": [
+      {
+       "name": "위력",
+       "value": 220
+      },
+      {
+       "name": "민첩",
+       "value": 66
+      },
+      {
+       "name": "지식",
+       "value": 164
+      },
+      {
+       "name": "체력",
+       "value": 46
+      },
+      {
+       "name": "정확",
+       "value": 77
+      },
+      {
+       "name": "의지",
+       "value": 94
+      },
+      {
+       "name": "정의[네자칸]",
+       "value": 30
+      },
+      {
+       "name": "자유[바이젤]",
+       "value": 57
+      },
+      {
+       "name": "환상[카이시넬]",
+       "value": 85
+      },
+      {
+       "name": "생명[유스티엘]",
+       "value": 87
+      },
+      {
+       "name": "시간[시엘]",
+       "value": 158
+      },
+      {
+       "name": "파괴[지켈]",
+       "value": 163
+      },
+      {
+       "name": "죽음[트리니엘]",
+       "value": 87
+      },
+      {
+       "name": "지혜[루미엘]",
+       "value": 166
+      },
+      {
+       "name": "운명[마르쿠탄]",
+       "value": 75
+      },
+      {
+       "name": "공간[이스라펠]",
+       "value": 110
+      },
+      {
+       "name": "아이템레벨",
+       "value": 5145
+      }
+     ]
+    },
+    "title": {
+     "ownedCount": 299,
+     "totalCount": 422
+    },
+    "daevanion": {
+     "boardList": [
+      {
+       "name": "네자칸",
+       "openPercent": 76
+      },
+      {
+       "name": "지켈",
+       "openPercent": 78
+      },
+      {
+       "name": "바이젤",
+       "openPercent": 81
+      },
+      {
+       "name": "트리니엘",
+       "openPercent": 79
+      },
+      {
+       "name": "아리엘",
+       "openPercent": 100
+      },
+      {
+       "name": "아스펠",
+       "openPercent": 31
+      },
+      {
+       "name": "마르쿠탄",
+       "openPercent": 100
+      },
+      {
+       "name": "유스티엘",
+       "openPercent": 88
+      }
+     ]
+    }
+   },
+   "equip": {
+    "equipment": {
+     "equipmentList": [
+      {
+       "slotPosName": "MainHand",
+       "name": "나트하라의 전곤",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "SubHand",
+       "name": "바실루스의 가더",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Torso",
+       "name": "바실루스의 흉갑",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pants",
+       "name": "용암 심장의 각반",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Helmet",
+       "name": "용암 심장의 투구",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Shoulder",
+       "name": "바실루스의 견갑",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Gloves",
+       "name": "바실루스의 장갑",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Boots",
+       "name": "바실루스의 장화",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Cape",
+       "name": "바실루스의 망토",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Belt",
+       "name": "고결의 허리띠",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Necklace",
+       "name": "현룡왕의 목걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring2",
+       "name": "가디언 천부장의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Earring1",
+       "name": "흩어진 광휘의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring2",
+       "name": "가디언 백부장의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Ring1",
+       "name": "흩어진 광휘의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet2",
+       "name": "심연의 팔찌",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Bracelet1",
+       "name": "침식의 팔찌",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch1",
+       "name": "칼드릭스의 브로치",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 5
+      },
+      {
+       "slotPosName": "Brooch2",
+       "name": "순례자의 브로치",
+       "grade": "Legend",
+       "enchantLevel": 15,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune1",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune2",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 6,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Amulet",
+       "name": "계시의 아뮬렛",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pendant",
+       "name": "드라코닉 펜던트",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana1",
+       "name": "수호의 성배",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana2",
+       "name": "수호의 양피지",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana3",
+       "name": "징벌의 나침반",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana4",
+       "name": "징벌의 종",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana5",
+       "name": "징벌의 거울",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana6",
+       "name": "징벌의 천칭",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana7",
+       "name": "수호의 열쇠",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana8",
+       "name": "수호의 모래시계",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "label": "큐짱 · 이슈타르 (2026-07-24 조회)",
+   "info": {
+    "profile": {
+     "characterName": "큐짱",
+     "characterLevel": 50,
+     "className": "수호성",
+     "combatPower": 474964,
+     "raceName": "천족",
+     "serverName": "이슈타르"
+    },
+    "stat": {
+     "statList": [
+      {
+       "name": "위력",
+       "value": 107
+      },
+      {
+       "name": "민첩",
+       "value": 215
+      },
+      {
+       "name": "지식",
+       "value": 143
+      },
+      {
+       "name": "체력",
+       "value": 46
+      },
+      {
+       "name": "정확",
+       "value": 48
+      },
+      {
+       "name": "의지",
+       "value": 94
+      },
+      {
+       "name": "정의[네자칸]",
+       "value": 40
+      },
+      {
+       "name": "자유[바이젤]",
+       "value": 116
+      },
+      {
+       "name": "환상[카이시넬]",
+       "value": 53
+      },
+      {
+       "name": "생명[유스티엘]",
+       "value": 100
+      },
+      {
+       "name": "시간[시엘]",
+       "value": 139
+      },
+      {
+       "name": "파괴[지켈]",
+       "value": 154
+      },
+      {
+       "name": "죽음[트리니엘]",
+       "value": 78
+      },
+      {
+       "name": "지혜[루미엘]",
+       "value": 150
+      },
+      {
+       "name": "운명[마르쿠탄]",
+       "value": 79
+      },
+      {
+       "name": "공간[이스라펠]",
+       "value": 116
+      },
+      {
+       "name": "아이템레벨",
+       "value": 4897
+      }
+     ]
+    },
+    "title": {
+     "ownedCount": 286,
+     "totalCount": 422
+    },
+    "daevanion": {
+     "boardList": [
+      {
+       "name": "네자칸",
+       "openPercent": 78
+      },
+      {
+       "name": "지켈",
+       "openPercent": 63
+      },
+      {
+       "name": "바이젤",
+       "openPercent": 64
+      },
+      {
+       "name": "트리니엘",
+       "openPercent": 63
+      },
+      {
+       "name": "아리엘",
+       "openPercent": 89
+      },
+      {
+       "name": "아스펠",
+       "openPercent": 31
+      },
+      {
+       "name": "마르쿠탄",
+       "openPercent": 100
+      },
+      {
+       "name": "유스티엘",
+       "openPercent": 68
+      }
+     ]
+    }
+   },
+   "equip": {
+    "equipment": {
+     "equipmentList": [
+      {
+       "slotPosName": "MainHand",
+       "name": "루드라의 비늘검",
+       "grade": "Epic",
+       "enchantLevel": 20,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "SubHand",
+       "name": "바실루스의 가더",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Torso",
+       "name": "바실루스의 흉갑",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pants",
+       "name": "바실루스의 각반",
+       "grade": "Unique",
+       "enchantLevel": 12,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Helmet",
+       "name": "침식된 잔영의 투구",
+       "grade": "Epic",
+       "enchantLevel": 19,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Shoulder",
+       "name": "바실루스의 견갑",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Gloves",
+       "name": "바실루스의 장갑",
+       "grade": "Unique",
+       "enchantLevel": 13,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Boots",
+       "name": "바실루스의 장화",
+       "grade": "Unique",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Cape",
+       "name": "바실루스의 망토",
+       "grade": "Unique",
+       "enchantLevel": 12,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Belt",
+       "name": "고결의 허리띠",
+       "grade": "Epic",
+       "enchantLevel": 4,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Necklace",
+       "name": "현룡왕의 목걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 4
+      },
+      {
+       "slotPosName": "Earring2",
+       "name": "흩어진 광휘의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 3
+      },
+      {
+       "slotPosName": "Earring1",
+       "name": "흩어진 광휘의 귀걸이",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 3
+      },
+      {
+       "slotPosName": "Ring1",
+       "name": "흩어진 광휘의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 3
+      },
+      {
+       "slotPosName": "Ring2",
+       "name": "흩어진 광휘의 반지",
+       "grade": "Unique",
+       "enchantLevel": 15,
+       "exceedLevel": 3
+      },
+      {
+       "slotPosName": "Bracelet2",
+       "name": "루드라의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 14,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Bracelet1",
+       "name": "루드라의 팔찌",
+       "grade": "Epic",
+       "enchantLevel": 17,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Brooch1",
+       "name": "순례자의 브로치",
+       "grade": "Legend",
+       "enchantLevel": 15,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Brooch2",
+       "name": "순례자의 브로치",
+       "grade": "Legend",
+       "enchantLevel": 15,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune2",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Rune1",
+       "name": "격돌의 룬",
+       "grade": "Special",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Amulet",
+       "name": "계시의 아뮬렛",
+       "grade": "Epic",
+       "enchantLevel": 10,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Pendant",
+       "name": "드라코닉 펜던트",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana1",
+       "name": "수호의 성배",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana2",
+       "name": "수호의 양피지",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana3",
+       "name": "수호의 나침반",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana4",
+       "name": "징벌의 종",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana5",
+       "name": "징벌의 거울",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana6",
+       "name": "징벌의 천칭",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana7",
+       "name": "수호의 열쇠",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      },
+      {
+       "slotPosName": "Arcana8",
+       "name": "징벌의 모래시계",
+       "grade": "Unique",
+       "enchantLevel": 5,
+       "exceedLevel": 0
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

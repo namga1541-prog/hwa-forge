@@ -1,0 +1,26 @@
+name: update-characters
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # 6시간마다 (UTC)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 캐릭터 데이터 갱신
+        run: node scripts/fetch-characters.mjs
+      - name: 변경분 커밋
+        run: |
+          git config user.name "hwa-forge-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/characters.json
+          git diff --cached --quiet || (git commit -m "chore: 캐릭터 데이터 자동 갱신" && git push)
