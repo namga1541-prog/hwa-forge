@@ -1,8 +1,8 @@
 name: update-characters
 
 on:
-  schedule:
-    - cron: '17 */6 * * *'   # 6시간마다 (UTC)
+  # schedule: # NC API가 GitHub 러너 IP를 429로 차단해 자동 스케줄 중단 (수동 트리거·로컬 갱신 사용)
+  #   - cron: "17 */6 * * *"
   workflow_dispatch: {}
 
 permissions:
